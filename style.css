@@ -1,0 +1,563 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cabin";
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: none;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #192a56;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0c142b;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  font-family: "Cabin";
+  display: flex;
+  background-color: #ffffff;
+  color: #192a56;
+  align-items: center;
+  min-height: 8vh;
+  box-shadow: 0 20px 20px 0 rgba(44, 41, 41, 0.356);
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+a {
+  text-decoration: none;
+  color: #192a56;
+}
+
+.logo-sec i {
+  margin-right: 2vh;
+  font-size: 2rem;
+}
+
+.logo-sec {
+  display: flex;
+  align-items: center;
+  flex: 3;
+  padding: 1%;
+  margin-left: 5%;
+}
+
+.links {
+  flex: 1;
+  margin-right: 5%;
+}
+
+.ul-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ul-links li {
+  list-style-type: none;
+  margin-right: 3vh;
+  width: 100px;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 5em;
+  font-weight: bold;
+}
+
+.ul-links li:hover {
+  background-color: #273c75;
+  transition: 0.5s;
+}
+
+.ul-links li:hover a {
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+
+.main {
+  background-image: url("images/shee.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.603);
+}
+
+.sec1-par {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #192a5669;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  width: 50%;
+}
+
+.sec1-par:hover {
+  box-shadow: 0 0px 50px 0 rgb(0, 0, 0);
+  transition: 0.5s;
+  background-color: #192a569f;
+}
+
+.sec1-par h2 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  margin: 2%;
+}
+
+.sec1-par p {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  margin: 2%;
+}
+
+.sec1-par-links {
+  width: 40vh;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.sec1-par a {
+  display: inline-block;
+  text-align: center;
+  margin: 5%;
+  color: white;
+  border: #f5f6fa solid 2px;
+  width: 15vh;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.sec1-par a:hover {
+  background-color: white;
+  color: #192a56;
+}
+
+.main1 {
+  background-image: url("images/wally.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.651);
+}
+
+.main1 h2 {
+  position: absolute;
+  top: 22vh;
+  left: 57vh;
+  color: white;
+  font-size: 50px;
+  text-shadow: 8px 8px rgba(0, 0, 0, 0.322);
+}
+
+.main1 img {
+  width: 200px;
+  position: absolute;
+  top: 20vh;
+  left: 30vh;
+  box-shadow: 0px 0px 100px 0px rgb(0, 0, 0);
+  z-index: 5;
+}
+
+.logo-par {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.377);
+  padding: 5vh;
+  text-align: end;
+}
+
+.logo-par h3 {
+  color: white;
+  font-size: 25px;
+}
+
+.logo-par p {
+  color: white;
+  font-size: 16px;
+}
+
+.logo-par:hover {
+  box-shadow: 0 0px 50px 0 rgb(0, 0, 0);
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.459);
+}
+
+.main2 {
+  background-image: url("images/wallhaven-q2gqol_1440x900.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.651);
+}
+
+.main2 h2 {
+  position: absolute;
+  top: 5vh;
+  color: #192a56;
+  font-size: 50px;
+  text-shadow: 8px 8px rgba(0, 0, 0, 0.13);
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 30vh 0 30vh;
+}
+
+.project1 {
+  color: #192a56;
+  background-color: rgba(255, 255, 255, 0.281);
+  margin: 3vh;
+  width: 300px;
+  height: 500px;
+  padding: 3vh;
+  position: relative;
+}
+
+.project1-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-85%, -35%);
+}
+
+.project2-list i {
+  margin-left: 1vh;
+}
+
+.project1-list i {
+  margin-left: 1vh;
+}
+
+.project1-list a {
+  color: #192a56;
+  margin: 2vh;
+  height: 35px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  padding: 1vh;
+  width: 150%;
+  border-radius: 25px;
+  border: white solid 2px;
+}
+
+.project1 p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.project1:hover {
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, 0.568);
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.568);
+}
+
+.project2:hover {
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, 0.568);
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.568);
+}
+
+.project2 {
+  color: #192a56;
+  background-color: rgba(255, 255, 255, 0.281);
+  margin: 3vh;
+  width: 300px;
+  height: 500px;
+  padding: 3vh;
+}
+
+.project2-list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.project2-list a {
+  color: #192a56;
+  margin: 1.5vh;
+  height: 35px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  padding: 1vh;
+  width: 80%;
+  border-radius: 25px;
+  border: white solid 2px;
+}
+
+.project2-list *:hover {
+  background-color: white;
+}
+
+.project1-list *:hover {
+  background-color: white;
+}
+
+.project2 p {
+  margin-bottom: 1.5vh;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.project2 h3 {
+  font-size: 25px;
+  font-weight: bolder;
+  text-shadow: 8px 5px rgba(0, 0, 0, 0.13);
+}
+
+.project1 h3 {
+  font-size: 25px;
+  font-weight: bolder;
+  text-shadow: 8px 5px rgba(0, 0, 0, 0.13);
+}
+
+.main3 {
+  background-image: url("images/wallhaven-oxeo25_1440x900.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.651);
+}
+
+.whole-page:hover {
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, 0.568);
+  background: linear-gradient(
+    to top left,
+    rgba(255, 255, 255, 0.212),
+    rgba(255, 255, 255, 0.315)
+  );
+  transition: 0.5s;
+}
+
+.contacter input {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.contacter input::placeholder {
+  color: black;
+}
+
+.contacter input[type="text"],
+.contacter input[type="email"] {
+  width: 300px;
+  height: 50px;
+  border: #ffffff solid 3px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.contacter textarea::placeholder {
+  color: black;
+}
+
+.contacter textarea {
+  border: none;
+  background: none;
+  outline: none;
+  width: 300px;
+  height: 500px;
+  border: white solid 3px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px;
+  margin-bottom: 1vh;
+}
+
+.contacter input[type="submit"] {
+  width: 200px;
+  border-radius: 25px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.contacter input[type="submit"]:hover {
+  width: 300px;
+  transition: 0.4s;
+}
+
+.contacter input[type="text"]:hover,
+.contacter input[type="email"]:hover,
+.contacter input[type="text"]:focus,
+.contacter input[type="email"]:focus {
+  width: 400px;
+  border-radius: 10rem;
+  transition: 0.5s;
+}
+
+.main3 h2 {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  color: #000000;
+  text-shadow: 8px 5px rgba(0, 0, 0, 0.055);
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 3vh;
+  z-index: 5;
+}
+
+.contacter label {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.whole-page {
+  display: flex;
+  background: linear-gradient(
+    to top left,
+    rgba(255, 255, 255, 0.116),
+    rgba(255, 255, 255, 0.233)
+  );
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 80%;
+}
+
+.my-contacts {
+  position: absolute;
+  left: 10vh;
+  text-align: center;
+}
+
+.my-contacts h4 {
+  margin-bottom: 5vh;
+  font-weight: 600;
+}
+
+.c1,
+.c2,
+.c3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin-bottom: 1vh;
+}
+
+.c1 i,
+.c2 i,
+.c3 i {
+  margin-right: 2vh;
+}
+
+form.contacter {
+  position: absolute;
+  right: 10vh;
+  display: flex;
+  padding: 5vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.contacter input {
+  margin: 1vh;
+}
+
+footer {
+  background-color: #0a0f16;
+  box-shadow: 0 -20px 10px 0 rgba(0, 0, 0, 0.342);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+
+.footy1 {
+  position: absolute;
+  color: white;
+  text-align: center;
+  margin: 3%;
+}
+
+.foot2 {
+  position: absolute;
+  left: 3vh;
+}
+
+.foot3 {
+  position: absolute;
+  right: 3vh;
+}
+
+.foot2 i {
+  font-size: 100px;
+  color: white;
+}
+
+.foot3 i {
+  font-size: 100px;
+  color: white;
+}
