@@ -96,7 +96,8 @@ a {
 
 .main {
   background-image: url("images/shee.jpg");
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -168,7 +169,8 @@ a {
 
 .main1 {
   background-image: url("images/wally.png");
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -226,7 +228,8 @@ a {
 
 .main2 {
   background-image: url("images/wallhaven-q2gqol_1440x900.png");
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -385,7 +388,8 @@ a {
 
 .main3 {
   background-image: url("images/wallhaven-oxeo25_1440x900.png");
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
