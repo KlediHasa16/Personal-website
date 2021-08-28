@@ -34,12 +34,11 @@ nav {
   background-color: #ffffff;
   color: #192a56;
   align-items: center;
-  min-height: 8vh;
   box-shadow: 0 20px 20px 0 rgba(44, 41, 41, 0.356);
   max-width: 100%;
   position: relative;
-  z-index: 3;
-  min-height: 2em;
+  z-index: 1;
+  min-height: 3em;
   overflow: hidden;
 }
 
@@ -48,12 +47,72 @@ a {
   color: #192a56;
 }
 
+.drop-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 10em;
+  position: absolute;
+  top: 0.5em;
+  right: 0em;
+  z-index: 3;
+  background-color: #ffffff;
+  border-radius: 1em;
+  display: none;
+}
+
+.three-bars {
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.drop-down ul li {
+  margin: 0 0.5em 0 0.5em;
+  list-style-type: none;
+  border-radius: 0.5em;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  max-width: 10em;
+}
+
+.drop-down ul ul {
+  display: none;
+}
+
+.drop-down ul ul li {
+  margin: 0.5em 0 0.5em 0;
+}
+
+.drop-down ul ul * {
+  min-width: 8em;
+}
+
+.drop-down ul ul li:hover {
+  background-color: #273c75;
+  transition: 0.5s;
+}
+
+.drop-down ul ul li:hover > a {
+  color: white;
+  transition: 0.5s;
+}
+
+.drop-down ul li:hover > ul {
+  display: block;
+}
+
 .logo-sec i {
   margin-right: 2vh;
   font-size: 2rem;
 }
 
 .logo-sec {
+  position: relative;
   display: flex;
   align-items: center;
   flex: 3;
@@ -266,9 +325,9 @@ a {
 .project1 {
   color: #192a56;
   background-color: rgba(255, 255, 255, 0.281);
-  margin: 3em;
-  max-width: 20em;
-  min-height: 30em;
+  margin: 2em 3em 3em 3em;
+  width: 20em;
+  height: 31em;
   padding: 1em;
   position: relative;
 }
@@ -285,6 +344,7 @@ a {
 }
 
 .project1-list {
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -306,7 +366,8 @@ a {
   font-size: 1em;
   text-align: center;
   padding: 1vh;
-  min-width: 15em;
+  width: 79%;
+  max-height: 5em;
   border-radius: 25px;
   border: white solid 2px;
 }
@@ -331,9 +392,9 @@ a {
 .project2 {
   color: #192a56;
   background-color: rgba(255, 255, 255, 0.281);
-  margin: 3em;
-  max-width: 20em;
-  min-height: 30em;
+  margin: 2em 3em 3em 3em;
+  width: 20em;
+  height: 31em;
   padding: 1em;
   position: relative;
 }
@@ -352,7 +413,8 @@ a {
   font-size: 1em;
   text-align: center;
   padding: 1vh;
-  min-width: 15em;
+  width: 79%;
+  max-height: 5em;
   border-radius: 25px;
   border: white solid 2px;
 }
@@ -391,7 +453,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   z-index: 1;
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.651);
@@ -463,14 +525,15 @@ a {
 .contacter input[type="email"]:hover,
 .contacter input[type="text"]:focus,
 .contacter input[type="email"]:focus {
-  width: 400px;
+  width: 350px;
   border-radius: 10rem;
   transition: 0.5s;
 }
 
 .main3 h2 {
   position: absolute;
-  top: 0.2em;
+  margin-top: 3vh;
+  top: 0.5em;
   color: #000000;
   text-shadow: 8px 5px rgba(0, 0, 0, 0.055);
   font-size: 50px;
@@ -492,11 +555,12 @@ a {
     rgba(255, 255, 255, 0.116),
     rgba(255, 255, 255, 0.233)
   );
-  min-width: 50em;
   justify-content: center;
   align-items: center;
   position: relative;
-  min-height: 36em;
+  margin: 10em 0em 10em 0em;
+  padding: 1em 2em 0 2em;
+  max-width: 45em;
 }
 
 .my-contacts {
@@ -534,7 +598,7 @@ form.contacter {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  width: 25em;
+  width: 20em;
 }
 
 .contacter input {
@@ -577,4 +641,232 @@ footer {
 .foot3 i {
   font-size: 7em;
   color: white;
+}
+
+@media screen and (max-width: 585px) {
+  .links {
+    display: none;
+  }
+
+  .drop-down {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .sub-main1 {
+    max-width: 25em;
+  }
+
+  .logo-par {
+    max-width: 25em;
+  }
+
+  .sub-main1 img {
+    left: 5%;
+    top: -6em;
+    width: 7em;
+  }
+
+  .sub-main1 h2 {
+    top: -1.7em;
+    left: 3em;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .project1 {
+    margin-top: 10em;
+  }
+
+  .project2 {
+    margin-top: 0em;
+  }
+
+  .whole-page {
+    flex-direction: column;
+  }
+
+  form.contacter {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav {
+    max-height: 13vh;
+  }
+
+  .logo-sec h1 {
+    max-width: 1em;
+  }
+
+  .drop-down {
+    top: 1em;
+  }
+
+  .sub-main1 h2 {
+    font-size: 30px;
+    left: 5em;
+    top: -1.4em;
+  }
+
+  .sub-main1 img {
+    top: -5.2em;
+    width: 6em;
+    left: 2.5em;
+  }
+
+  .logo-par {
+    max-width: 20em;
+    padding: 1em;
+  }
+
+  .logo-par h3 {
+    font-size: 30px;
+  }
+
+  .logo-par p {
+    font-size: 14px;
+  }
+
+  .foot2 i,
+  .foot3 i {
+    font-size: 3em;
+  }
+
+  .footy1 p {
+    font-size: 12px;
+  }
+
+  .contacter input[type="text"],
+  .contacter input[type="email"] {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .contacter textarea {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .contacter input[type="submit"] {
+    width: 100px;
+  }
+
+  .contacter input[type="submit"]:hover {
+    width: 200px;
+  }
+
+  .contacter input[type="text"]:hover,
+  .contacter input[type="email"]:hover,
+  .contacter input[type="text"]:focus,
+  .contacter input[type="email"]:focus {
+    width: 250px;
+  }
+
+  .my-contacts h4 {
+    font-size: 14px;
+  }
+
+  .c1,
+  .c2,
+  .c3 {
+    font-size: 18px;
+  }
+
+  .whole-page {
+    max-width: 18em;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .sec1-par {
+    max-width: 16em;
+  }
+
+  .sec1-par h2 {
+    font-size: 30px;
+  }
+
+  .sec1-par p {
+    font-size: 14px;
+  }
+
+  .sec1-par a {
+    width: 7em;
+    font-size: 14px;
+    margin: 0.5em;
+    padding: 0.25em 0.05em 0em 0.05em;
+  }
+
+  .logo-par p {
+    font-size: 12px;
+  }
+
+  .logo-par h3 {
+    font-size: 20px;
+  }
+
+  .logo-par {
+    max-width: 16em;
+  }
+
+  .sub-main1 img {
+    width: 5em;
+    top: -4.5em;
+    left: 1.5em;
+  }
+
+  .sub-main1 h2 {
+    font-size: 25px;
+    left: 4.5em;
+  }
+
+  .project1-list {
+    margin-top: 1em;
+  }
+
+  .project1-list a {
+    font-size: 12px;
+    width: 60%;
+  }
+
+  .project2-list a {
+    font-size: 12px;
+    width: 60%;
+  }
+
+  .project1 p {
+    font-size: 14px;
+  }
+
+  .project2 p {
+    font-size: 14px;
+  }
+
+  .project1 h3 {
+    font-size: 20px;
+  }
+
+  .project2 h3 {
+    font-size: 20px;
+  }
+
+  .project1 {
+    width: 16em;
+    height: 28em;
+  }
+
+  .project2 {
+    width: 16em;
+    height: 28em;
+  }
+
+  .footy1 h1 {
+    margin-top: 0.5em;
+    font-size: 25px;
+  }
 }
