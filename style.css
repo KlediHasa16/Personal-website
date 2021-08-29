@@ -5,6 +5,10 @@
   font-family: "Cabin";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar-track {
   box-shadow: none;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
